@@ -14,14 +14,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        InstanceClass.CallApi().registerUser("viren","viren@124@gmail.com","viren123").enqueue(new Callback<UserData>() {
+        InstanceClass.CallApi().registerUser("vraj","vraj@124@gmail.com","vraj123").enqueue(new Callback<Modelclass>() {
             @Override
-            public void onResponse(Call<UserData> call, Response<UserData> response) {
-                Log.d("TTT", "onResponse: "+response.body());
+            public void onResponse(Call<Modelclass> call, Response<Modelclass> response) {
+                Log.d("TTT", "onResponse: "+response.body().getConnection());
             }
 
             @Override
-            public void onFailure(Call<UserData> call, Throwable t) {
+            public void onFailure(Call<Modelclass> call, Throwable t) {
                 Log.d("TTT", "onFailure: "+t.getLocalizedMessage());
             }
         });

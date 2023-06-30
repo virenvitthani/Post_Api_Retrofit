@@ -17,6 +17,7 @@
         android:orientation="vertical">
 
         <EditText
+            android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:hint="  Name"
@@ -27,6 +28,7 @@
             android:layout_margin="20dp"/>
 
         <EditText
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:hint="  Email"
@@ -38,6 +40,7 @@
 
 
         <EditText
+            android:id="@+id/login"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:hint="  Password"

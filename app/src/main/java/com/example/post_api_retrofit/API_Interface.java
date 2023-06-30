@@ -11,5 +11,5 @@ public interface API_Interface {
 
     @FormUrlEncoded
     @POST("Register.php")
-    Call<UserData> registerUser(@Field("Name") String name, @Field("Email") String email, @Field("Password") String password);
+    Call<Modelclass> registerUser(@Field("name") String name, @Field("email") String email, @Field("password") String password);
 }
